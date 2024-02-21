@@ -1,0 +1,3 @@
+Wed Feb  7 22:40:46 2024
+WARNING: mju_openResource: unknown file '/Users/sissixxxy/Desktop/CS496_ALife/CS496_ALifeRepo/example.xml'
+
