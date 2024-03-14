@@ -1,62 +1,62 @@
 <mujoco>
     <option gravity="0 0 -9.81"/>
     <worldbody>
-        <light diffuse="0.8 0.8 0.8" pos="0 0 2" dir="0 0 -1"/>
-        <geom type="plane" size="1 1 0.1" rgba="1 1 1 1"/>
-        <!-- Crab Main Body -->
-        <body name="crab_body" pos="0 0 1">
-            <joint name="crab_body" type="free"/>
-            <geom type="cylinder" size="0.1 0.2" rgba="0.5 0.1 0.5 1" euler="0 90 0" mass="15"/> <!-- Changed to cylinder -->
-
-            <!-- Front Left Leg -->
-            <body name="front_left_leg" pos="-0.15 -0.2 0" euler="-90 0 -90">
-                <joint name="fl1" pos="0 0 0.1 " type="hinge" axis="0 1 0" range="-45 45"/>
-                <geom type="cylinder" size="0.03 0.1" rgba="0 0 0.6 1"/>
-                <body pos="0 0 -0.18">
-                    <joint name="fl2" pos="0 0 0.08" type="hinge" axis="0 1 0" range="-45 45"/>
-                    <geom type="cylinder" size="0.02 0.08" rgba="0.5 0.3 0.1 1"/>
+        <light diffuse="0.8 0.8 0.8" pos="0 0 8" dir="0 0 -1"/>
+        <geom type="plane" size="3 3 0.1" rgba="1 1 1 1"/>
+        <!-- Main Body -->
+        <body name="main_body" pos="0 0 2">
+            <joint name="main_body" type="free"/>
+            <geom type="cylinder" size="0.1 0.2" rgba="0.5 0.1 0.5 1" euler="90 0 90" mass="40"/> <!-- Changed to cylinder -->
+            <!-- lightgreen Leg -->
+            <body name="leg1" pos="-0.15 -0.1 0" euler="0 90 0">
+                <joint name="leg1-1" pos="0 0 0.1 " type="hinge" axis="0 1 0" range="-45 45"/>
+                <geom type="cylinder" size="0.03 0.1" rgba="0 1 0.6 0.5" mass="10"/>
+                <body name = "shank1" pos="0 0 -0.3">
+                    <joint name="leg1-2"  pos="0 0 0.2" type="hinge" axis="0 1 0" range="-90 -70"/>
+                    <geom type="cylinder" size="0.02 0.2" rgba="0.5 0.3 0.1 1" mass="30"/>
                 </body>
             </body>
 
-            <!-- Front Right Leg -->
-            <body name="front_right_leg" pos="-0.15 0.2 0" euler="-90 0 -90">
-                <joint name="fr1" pos="0 0 -0.1" type="hinge" axis="0 1 0" range="-45 45"/>
-                <geom type="cylinder" size="0.03 0.1" rgba="0 0 0.6 1"/>
-                <body pos="0 0 0.18">
-                    <joint name="fr2" pos="0 0 -0.08" type="hinge" axis="0 1 0" range="-45 45"/>
-                    <geom type="cylinder" size="0.02 0.08" rgba="0.5 0.3 0.1 1"/>
+            <!-- hotpink Leg -->
+            <body name="leg2" pos="-0.15 0.1 0" euler="0 90 0">
+                <joint name="leg2-1" pos="0 0 0.1" type="hinge" axis="0 1 0" range="-45 45"/>
+                <geom type="cylinder" size="0.03 0.1" rgba="1 0 0.6 1" mass="10"/>
+                <body name = "shank2" pos="0 0 -0.3">
+                    <joint name="leg2-2" pos="0 0 0.2" type="hinge" axis="0 1 0" range="-90 -70"/>
+                    <geom type="cylinder" size="0.02 0.2" rgba="0.5 0.3 0.1 1" mass="30"/>
                 </body>
             </body>
 
-            <!-- Back Left Leg -->
-            <body name="back_left_leg" pos="0.15 -0.2 0" euler="-90 0 -90">
-                <joint name="bl1" pos="0 0 0.1" type="hinge" axis="0 1 0" range="-45 45"/>
-                <geom type="cylinder" size="0.03 0.1" rgba="0 0 0.6 1"/>
-                <body pos="0 0 -0.18">
-                    <joint name="bl2" pos="0 0 0.08" type="hinge" axis="0 1 0" range="-45 45"/>
-                    <geom type="cylinder" size="0.02 0.08" rgba="0.5 0.3 0.1 1"/>
+            <!-- Green Leg -->
+            <body name="leg3" pos="0.15 -0.1 0" euler="0 -90 0">
+                <joint name="leg3-1" pos="0 0 0.1" type="hinge" axis="0 1 0" range="-45 45"/>
+                <geom type="cylinder" size="0.03 0.1" rgba="0 0.3 0.1 1" mass="10"/>
+                <body name = "shank3" pos="0 0 -0.3">
+                    <joint name="leg3-2" pos="0 0 0.2" type="hinge" axis="0 1 0" range="70 90"/>
+                    <geom type="cylinder" size="0.02 0.2" rgba="0.5 0.3 0.1 1" mass="30"/>
                 </body>
             </body>
 
-            <!-- Back Right Leg -->
-            <body name="back_right_leg" pos="0.15 0.2 0" euler="-90 0 -90">
-                <joint name="br1" pos="0 0 -0.1" type="hinge" axis="0 1 0" range="-45 45"/>
-                <geom type="cylinder" size="0.03 0.1" rgba="0 0 0.6 1"/>
-                <body pos="0 0 0.18">
-                    <joint name="br2" pos="0 0 -0.08" type="hinge" axis="0 1 0" range="-45 45"/>
-                    <geom type="cylinder" size="0.02 0.08" rgba="0.5 0.3 0.1 1"/>
+            <!-- Blue Leg -->
+            <body name="leg4" pos="0.15 0.1 0" euler="0 -90 0">
+                <joint name="leg4-1" pos="0 0 0.1" type="hinge" axis="0 1 0" range="-45 45"/>
+                <geom type="cylinder" size="0.03 0.1" rgba="0 0 0.6 1" mass="10"/>
+                <body name = "shank4" pos="0 0 -0.3">
+                    <joint name="leg4-2" pos="0 0 0.2" type="hinge" axis="0 1 0" range="70 90"/>
+                    <geom type="cylinder" size="0.02 0.2" rgba="0.5 0.3 0.1 1" mass="30"/>
                 </body>
             </body>
         </body>
+
     </worldbody>
     <actuator>
-        <motor joint="fl1" name="fl1j"/>
-        <motor joint="fl2" name="fl2j"/>
-        <motor joint="bl1" name="bl1j"/>
-        <motor joint="bl2" name="bl2j"/>
-        <motor joint="fr1" name="fr1j"/>
-        <motor joint="fr2" name="fr2j"/>
-        <motor joint="br1" name="br1j"/>
-        <motor joint="br2" name="br2j"/>
+        <motor joint="leg1-1" name="fl1j"/>
+        <motor joint="leg1-2" name="fl2j"/>
+        <motor joint="leg3-1" name="bl1j"/>
+        <motor joint="leg3-2" name="bl2j"/>
+        <motor joint="leg2-1" name="fr1j"/>
+        <motor joint="leg2-2" name="fr2j"/>
+        <motor joint="leg4-1" name="br1j"/>
+        <motor joint="leg4-2" name="br2j"/>
     </actuator>
 </mujoco>
