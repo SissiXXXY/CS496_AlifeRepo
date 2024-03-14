@@ -1,5 +1,5 @@
 <mujoco>
-    <option gravity="0 0 -9.81"/>
+    <option gravity="0 0 -50.81"/>
     <worldbody>
         <light diffuse="0.8 0.8 0.8" pos="0 0 8" dir="0 0 -1"/>
         <geom type="plane" size="3 3 0.1" rgba="1 1 1 1"/>

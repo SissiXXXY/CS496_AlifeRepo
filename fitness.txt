@@ -3,3 +3,8 @@ Creature: 2, fitness:0.5922022883205553
 Creature: 3, fitness:0.2424552157261689
 Creature: 4, fitness:0.21055373928058305
 Creature: 5, fitness:0.26697557157452023
+Creature: 1, fitness:0.479697782292606
+Creature: 2, fitness:0.1479482004180029
+Creature: 3, fitness:0.260598859600741
+Creature: 4, fitness:0.7151423762656727
+Creature: 5, fitness:0.6952643932859727

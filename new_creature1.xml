@@ -1,49 +1,49 @@
 <mujoco>
-    <option gravity="0 0 -9.81" />
+    <option gravity="0 0 -30.81" />
     <worldbody>
         <light diffuse="0.8 0.8 0.8" pos="0 0 8" dir="0 0 -1" />
         <geom type="plane" size="3 3 0.1" rgba="1 1 1 1" />
         
         <body name="main_body" pos="0 0 2">
             <joint name="main_body" type="free" />
-            <geom type="sphere" size="0.13" rgba="1 0 0 1" euler="90 0 90" mass="40" /> 
+            <geom type="sphere" size="0.28" rgba="1 0 0 1" euler="90 0 90" mass="40" /> 
             
-            <body name="leg1" pos="-0.33999999999999997 -0.1 0.1" euler="0 90 0">
-                <joint name="leg1-1" pos="0 0 0.21" type="hinge" axis="0 1 0" range="-45 45" />
-                <geom type="cylinder" size="0.04 0.21" rgba="0 1 0.6 0.5" mass="10" />
-                <body name="shank1" pos="0 0 -0.42">
-                    <joint name="leg1-2" pos="0 0 0.21" type="hinge" axis="0 1 0" range="-90 -70" />
-                    <geom type="cylinder" size="0.04 0.21" rgba="0.5 0.3 0.1 1" mass="30" />
+            <body name="leg1" pos="-0.41000000000000003 -0.1 0.1" euler="0 90 0">
+                <joint name="leg1-1" pos="0 0 0.13" type="hinge" axis="0 1 0" range="-45 45" />
+                <geom type="box" size="0.04 0.09 0.13" rgba="0 1 0.6 0.5" mass="10" />
+                <body name="shank1" pos="0 0 -0.26">
+                    <joint name="leg1-2" pos="0 0 0.13" type="hinge" axis="0 1 0" range="-90 -70" />
+                    <geom type="box" size="0.04 0.09 0.13" rgba="0.5 0.3 0.1 1" mass="30" />
                 </body>
             </body>
 
             
-            <body name="leg2" pos="-0.38 0.1 0.1" euler="0 90 0">
-                <joint name="leg2-1" pos="0 0 0.25" type="hinge" axis="0 1 0" range="-45 45" />
-                <geom type="cylinder" size="0.01 0.25" rgba="1 0 0.6 1" mass="10" />
-                <body name="shank2" pos="0 0 -0.5">
-                    <joint name="leg2-2" pos="0 0 0.25" type="hinge" axis="0 1 0" range="-90 -70" />
-                    <geom type="cylinder" size="0.01 0.25" rgba="0.5 0.3 0.1 1" mass="30" />
+            <body name="leg2" pos="-0.41000000000000003 0.1 0.1" euler="0 90 0">
+                <joint name="leg2-1" pos="0 0 0.13" type="hinge" axis="0 1 0" range="-45 45" />
+                <geom type="box" size="0.06 0.03 0.13" rgba="1 0 0.6 1" mass="10" />
+                <body name="shank2" pos="0 0 -0.26">
+                    <joint name="leg2-2" pos="0 0 0.13" type="hinge" axis="0 1 0" range="-90 -70" />
+                    <geom type="box" size="0.06 0.03 0.13" rgba="0.5 0.3 0.1 1" mass="30" />
                 </body>
             </body>
 
             
-            <body name="leg3" pos="0.31 -0.1 0.1" euler="0 -90 0">
-                <joint name="leg3-1" pos="0 0 0.18" type="hinge" axis="0 1 0" range="-45 45" />
-                <geom type="cylinder" size="0.02 0.18" rgba="0 0.3 0.1 1" mass="10" />
-                <body name="shank3" pos="0 0 -0.36">
-                    <joint name="leg3-2" pos="0 0 0.18" type="hinge" axis="0 1 0" range="70 90" />
-                    <geom type="cylinder" size="0.02 0.18" rgba="0.5 0.3 0.1 1" mass="30" />
+            <body name="leg3" pos="0.5 -0.1 0.1" euler="0 -90 0">
+                <joint name="leg3-1" pos="0 0 0.22" type="hinge" axis="0 1 0" range="-45 45" />
+                <geom type="box" size="0.04 0.06 0.22" rgba="0 0.3 0.1 1" mass="10" />
+                <body name="shank3" pos="0 0 -0.44">
+                    <joint name="leg3-2" pos="0 0 0.22" type="hinge" axis="0 1 0" range="70 90" />
+                    <geom type="box" size="0.04 0.06 0.22" rgba="0.5 0.3 0.1 1" mass="30" />
                 </body>
             </body>
 
             
-            <body name="leg4" pos="0.33999999999999997 0.1 0.1" euler="0 -90 0">
-                <joint name="leg4-1" pos="0 0 0.21" type="hinge" axis="0 1 0" range="-45 45" />
-                <geom type="cylinder" size="0.04 0.21" rgba="0 0 0.6 1" mass="10" />
-                <body name="shank4" pos="0 0 -0.42">
-                    <joint name="leg4-2" pos="0 0 0.21" type="hinge" axis="0 1 0" range="70 90" />
-                    <geom type="cylinder" size="0.04 0.21" rgba="0.5 0.3 0.1 1" mass="30" />
+            <body name="leg4" pos="0.39 0.1 0.1" euler="0 -90 0">
+                <joint name="leg4-1" pos="0 0 0.11" type="hinge" axis="0 1 0" range="-45 45" />
+                <geom type="box" size="0.06 0.01 0.11" rgba="0 0 0.6 1" mass="10" />
+                <body name="shank4" pos="0 0 -0.22">
+                    <joint name="leg4-2" pos="0 0 0.11" type="hinge" axis="0 1 0" range="70 90" />
+                    <geom type="box" size="0.06 0.01 0.11" rgba="0.5 0.3 0.1 1" mass="30" />
                 </body>
             </body>
         </body>
