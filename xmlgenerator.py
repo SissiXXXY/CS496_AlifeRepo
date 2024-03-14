@@ -238,7 +238,7 @@ def View(file, creature_num):
     startpos = copy.copy(d.qpos[:2])
     initialpos = copy.copy(d.qpos[:2])
 
-    for i in range(500):
+    for i in range(1000):
         current_step = i // duration_per_direction
         if viewer.is_alive:
             if i % 2 == 0:
