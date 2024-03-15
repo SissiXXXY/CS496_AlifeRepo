@@ -1,0 +1,12 @@
+Creature:1,fitness:0.2306907906130215
+Creature:2,fitness:0.31158749167701066
+Creature:3,fitness:0.22493020206971612
+Creature:4,fitness:0.2932546304908925
+Creature:5,fitness:0.3086083048351106
+Creature:6,fitness:0.2213820106603602
+Creature:7,fitness:0.2210326272433837
+Creature:8,fitness:0.11304300138631608
+Creature:9,fitness:0.20061268958633252
+Creature:10,fitness:0.4154390595889895
+Round 1:
+Creature with the highest fitness score: 10, Fitness Score: 0.4154390595889895
