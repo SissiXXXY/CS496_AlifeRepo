@@ -1,7 +1,17 @@
 # CS496_AlifeRepo
 Northwestern CS496 Artificial Life Repository
 
-Delete the fitness1.txt, fitness2.txt before you run
+Delete the following files before you run:
+fitness.txt fitness0.txt, fitness1.txt, fitness2.txt 
+new_creature.xml new_creature(1-5).xml
+round1_cr(1-5).xml
+round2_cr(1-5).xml
+
+crucial files:
+obj.xml
+mutate.py
+functions.py
+
 Run the file : mutate.py
 There will be two rounds of mutation
 
