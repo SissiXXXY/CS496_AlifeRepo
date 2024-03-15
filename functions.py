@@ -211,7 +211,7 @@ def GenerateCreature(original_xml, new_xml):
 # Output: efficency(fitness score)
 # Description: Calculates the fitness score of the creature based on the efficency of the movement
 ############################################
-def Fitness_function(startpos, endpos, total_distance):
+def FitnessFunction(startpos, endpos, total_distance):
     if total_distance == 0:
         return 0
     absdist = math.sqrt((endpos[0] - startpos[0]) ** 2 + (endpos[1] - startpos[1]) ** 2)
@@ -225,7 +225,7 @@ def Fitness_function(startpos, endpos, total_distance):
 # Output: txt file with fitness score
 # Description: run the simulation of the creature and calculate the fitness score
 ############################################
-def View(file, creature_num):
+def View(file, creature_num, round):
     m = dm_control.mujoco.MjModel.from_xml_path(file)
     d = dm_control.mujoco.MjData(m)
     viewer = mujoco_viewer.MujocoViewer(m, d)
@@ -256,12 +256,7 @@ def View(file, creature_num):
             break
     endpos = copy.copy(d.qpos[:2])
     print(total_distance)
-    with open("fitness.txt", "a") as f:
+    with open(f"fitness{round}.txt", "a") as f:
         f.write(
-            f"Creature: {creature_num}, fitness:{Fitness_function(startpos, endpos, total_distance)}\n"
+            f"Creature:{creature_num},fitness:{FitnessFunction(startpos, endpos, total_distance)}\n"
         )
-
-
-for i in range(1, 6):
-    GenerateCreature("object.xml", f"new_creature{i}.xml")
-    View(f"new_creature{i}.xml", i)

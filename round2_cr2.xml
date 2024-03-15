@@ -13,7 +13,7 @@
                 <geom type="cylinder" size="0.03 0.14" rgba="0 1 0.6 0.5" mass="10" />
                 <body name="shank1" pos="0 0 -0.28">
                     <joint name="leg1-2" pos="0 0 0.14" type="hinge" axis="0 1 0" range="-90 -70" />
-                    <geom type="cylinder" size="0.03 0.14" rgba="0.5 0.3 0.1 1" mass="30" />
+                    <geom type="cylinder" size="0.03 0.21520760516143034" rgba="0.5 0.3 0.1 1" mass="30" />
                 </body>
             </body>
 
@@ -23,7 +23,7 @@
                 <geom type="cylinder" size="0.03 0.19" rgba="1 0 0.6 1" mass="10" />
                 <body name="shank2" pos="0 0 -0.38">
                     <joint name="leg2-2" pos="0 0 0.19" type="hinge" axis="0 1 0" range="-90 -70" />
-                    <geom type="cylinder" size="0.03 0.19" rgba="0.5 0.3 0.1 1" mass="30" />
+                    <geom type="cylinder" size="0.03 0.29206746414765544" rgba="0.5 0.3 0.1 1" mass="30" />
                 </body>
             </body>
 

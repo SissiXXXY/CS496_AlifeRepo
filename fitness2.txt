@@ -1,0 +1,5 @@
+Creature:1,fitness:0.18428346546051982
+Creature:2,fitness:0.4489109539656235
+Creature:3,fitness:0.7529376222059262
+Creature:4,fitness:0.8076830525835061
+Creature:5,fitness:0.7416904449452769

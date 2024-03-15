@@ -6,7 +6,7 @@
         
         <body name="main_body" pos="0 0 2">
             <joint name="main_body" type="free" />
-            <geom type="box" size="0.25 0.21 0.12" rgba="1 0 0 1" euler="90 0 90" mass="40" /> 
+            <geom type="box" size="0.25 0.21 0.12" rgba="1 0 0 0.5" euler="90 0 90" mass="40" /> 
             
             <body name="leg1" pos="-0.39 -0.1 0.1" euler="0 90 0">
                 <joint name="leg1-1" pos="0 0 0.14" type="hinge" axis="0 1 0" range="-45 45" />
@@ -46,7 +46,7 @@
                     <geom type="cylinder" size="0.02 0.19" rgba="0.5 0.3 0.1 1" mass="30" />
                 </body>
             </body>
-        </body>
+        <body name="weightmass" pos="0.125 0 -0.12"><geom type="sphere" size="0.05" rgba="0 1 0 1" /></body></body>
 
     </worldbody>
     <actuator>
